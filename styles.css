@@ -1018,7 +1018,7 @@ body {
         padding: 1.5rem;
     }
 }
-/* সব ফোনের জন্য ১০০% পারফেক্ট ফিক্স */
+/* ১০০% পারফেক্ট ফাইনাল ফিক্স */
 @media screen and (max-width: 768px) {
     * {
         max-width: 100vw !important;
@@ -1030,29 +1030,33 @@ body {
         width: 100%;
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* সব কন্টেন্ট মাঝখানে আনবে */
+        text-align: center; /* সব টেক্সট মাঝখানে আনবে */
     }
 
-    .container, .hero-container, section, nav, .skills-container, .contact-info {
-        width: 95% !important; /* স্ক্রিনের দুই পাশে সামান্য জায়গা রাখবে */
-        margin: 10px auto !important;
-        padding: 15px !important;
-        display: block !important;
+    /* মেনুবার ঠিক করার জন্য */
+    .nav-menu {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 10px 0 !important;
+        background: #111 !important; /* মেনুর ব্যাকগ্রাউন্ড একটু উজ্জ্বল হবে */
+    }
+    
+    .nav-link {
+        color: #fff !important; /* মেনুর লেখা সাদা হবে */
+        font-size: 14px !important;
+        margin: 5px !important;
+    }
+
+    /* সার্ভিস এবং স্কিল কার্ডগুলো মাঝখানে আনার জন্য */
+    .container, .hero-container, section, .service-card, .skills-container {
+        width: 92% !important;
+        margin: 15px auto !important; /* ডানে বামে সমান জায়গা রাখবে */
         float: none !important;
+        display: inline-block !important; /* মাঝখানে রাখার জন্য */
     }
 
     .hero-content {
-        display: flex !important;
-        flex-direction: column !important;
-        text-align: center !important;
-        align-items: center !important;
-    }
-
-    /* ছবি বা কার্ডগুলো যেন স্ক্রিনের বাইরে না যায় */
-    img, .card, .box {
-        width: 100% !important;
-        height: auto !important;
+        padding: 40px 20px !important;
     }
 }
