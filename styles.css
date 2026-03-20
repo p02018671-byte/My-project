@@ -1018,20 +1018,29 @@ body {
         padding: 1.5rem;
     }
 }
-/* মোবাইলের জন্য স্পেশাল ডিজাইন */
+/* সব ফোনের জন্য পারফেক্ট ফিক্স */
 @media screen and (max-width: 768px) {
+    * {
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+    }
+    
     body {
-        overflow-x: hidden; /* ডানে-বামে যেন বেশি জায়গা না নেয় */
-    }
-    .container, section {
+        overflow-x: hidden !important;
         width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
-    /* আপনার হিরো সেকশন বা কন্টেন্টগুলোকে একটার নিচে আরেকটা আনবে */
+
+    .container, .hero-container, section, nav {
+        width: 100% !important;
+        padding: 15px !important;
+        display: block !important;
+    }
+
     .hero-content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
     }
 }
