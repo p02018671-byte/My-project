@@ -1,12 +1,4 @@
-/* --- Global Styles --- */
-:root {
-    --primary-color: #00d2ff;
-    --accent-color: #9d50bb;
-    --dark-bg: #0a0a0a;
-    --card-bg: #1a1a1a;
-    --text-white: #ffffff;
-}
-
+/* --- জিসানের পোর্টফোলিও ফাইনাল ফিক্স --- */
 * {
     margin: 0;
     padding: 0;
@@ -15,146 +7,91 @@
 }
 
 body {
-    background-color: var(--dark-bg);
-    color: var(--text-white);
+    background-color: #050505; /* ডার্ক ব্যাকগ্রাউন্ড */
+    color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-.container {
-    max-width: 1200px;
+.container, .hero-container {
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* --- Header & Nav --- */
-nav {
-    background: rgba(0, 0, 0, 0.9);
+/* নেভিগেশন */
+.navbar {
+    background: rgba(0,0,0,0.9);
     padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #333;
 }
 
 .nav-menu {
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    gap: 25px;
 }
 
-.nav-link {
-    color: var(--text-white);
-    text-decoration: none;
-    margin-left: 25px;
-    transition: 0.3s;
-}
+.nav-link { color: white; text-decoration: none; }
 
-.nav-link:hover { color: var(--primary-color); }
-
-/* --- Hero Section --- */
+/* হিরো সেকশন - পিসির জন্য */
 .hero {
     padding: 150px 0 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-.hero-content { flex: 1; }
-
-.hero-content h1 {
-    font-size: 3rem;
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero-title h1 {
+    font-size: 3.5rem;
+    color: #00d2ff; /* নিয়ন ব্লু */
 }
 
-.code-window {
-    flex: 1;
-    background: #1e1e1e;
-    padding: 25px;
-    border-radius: 12px;
+/* সার্ভিস ও স্কিল কার্ড */
+section { padding: 60px 0; }
+
+.service-card, .skill-card, .contact-container {
+    background: #111;
     border: 1px solid #333;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    margin-left: 50px;
-}
-
-/* --- Services & Cards --- */
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    padding: 50px 0;
-}
-
-.card {
-    background: var(--card-bg);
     padding: 30px;
     border-radius: 15px;
-    border: 1px solid #333;
-    text-align: center;
+    margin-bottom: 20px;
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    border-color: var(--primary-color);
-}
-
-/* --- Skills & Contact --- */
-.skills-container, .contact-info {
-    background: var(--card-bg);
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.contact-item {
-    background: #252525;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-/* --- Floating Buttons --- */
-.social-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 9999;
-}
-
-/* --- MOBILE RESPONSIVE (FOR PHONES) --- */
+/* --- মোবাইল ফিক্স (সব ফোনের জন্য) --- */
 @media screen and (max-width: 768px) {
     .hero {
-        flex-direction: column;
         text-align: center;
         padding-top: 100px;
     }
 
-    .code-window {
-        margin-left: 0;
-        margin-top: 40px;
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .hero-content h1 { font-size: 2rem; }
-
     .nav-menu {
         justify-content: center;
+        padding-right: 20px;
     }
 
-    .nav-link { margin: 0 10px; font-size: 13px; }
+    .hero-title h1 { font-size: 2.2rem; }
 
-    .container, section, .card, .skills-container, .contact-info {
-        width: 92% !important;
+    /* কার্ডগুলো মাঝখানে আনার মূল কোড */
+    .service-card, .skill-card, .contact-container, .hero-content {
+        width: 95% !important;
         margin-left: auto !important;
         margin-right: auto !important;
+        float: none !important;
         display: block !important;
     }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* নীল শেপ বন্ধ করার জন্য এক্সট্রা সিকিউরিটি */
+canvas, .particle-canvas, [class*="animation"] {
+    display: none !important;
 }
