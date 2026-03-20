@@ -1,5 +1,4 @@
-/* CSS Variables */
-:root {
+/* CSS Variables */:root 
     --bg-primary: #0a0a0a;
     --bg-secondary: #1a1a1a;
     --bg-card: #2a2a2a;
@@ -1017,5 +1016,22 @@ body {
     
     .skill-category {
         padding: 1.5rem;
+    }
+}
+/* মোবাইলের জন্য স্পেশাল ডিজাইন */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* ডানে-বামে যেন বেশি জায়গা না নেয় */
+    }
+    .container, section {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    /* আপনার হিরো সেকশন বা কন্টেন্টগুলোকে একটার নিচে আরেকটা আনবে */
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
