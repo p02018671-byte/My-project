@@ -3,89 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jisan Ahmed | Portfolio - Optimized for Mobile</title>
+    <title>Jisan Ahmed | Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="glow-blob"></div>
+    <div class="glow-bg"></div>
     
     <nav class="navbar">
-        <div class="container mobile-flex">
+        <div class="container nav-flex">
             <div class="logo">JISAN<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#stack">Stack</a></li>
-                <li><a href="#philosophy">Philosophy</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <button id="lang-btn" class="lang-switch">BN</button>
+                <ul class="nav-links">
+                    <li><a href="#home" data-en="Home" data-bn="হোম">Home</a></li>
+                    <li><a href="#stack" data-en="Stack" data-bn="স্কিল">Stack</a></li>
+                    <li><a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <header id="home" class="hero mobile-padding">
+    <header id="home" class="hero">
         <div class="container">
-            <div class="hero-text mobile-center">
-                <span class="tag mobile-badge">Next-Gen Tech Stock Ready</span>
-                <h1>Building <span class="gradient-text">Digital Trust</span> & Scalable Logic</h1>
-                <p>Developing 24/7 digital showrooms that drive business growth using Node.js backend logic and AI-powered tools like Windsurf.</p>
-                <div class="btn-group mobile-btns">
-                    <a href="#contact" class="btn-main">Get Started</a>
-                    <a href="#philosophy" class="btn-alt">My Vision</a>
-                </div>
+            <span class="badge" data-en="🚀 Next-Gen Developer" data-bn="🚀 নেক্সট-জেন ডেভেলপার">🚀 Next-Gen Developer</span>
+            <h1 id="main-title">Building <span class="gradient-text">Digital Trust</span> & Scalable Logic</h1>
+            <p id="hero-desc">Developing 24/7 digital showrooms and powerful backend logic using Node.js and AI tools.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary" data-en="Get Started" data-bn="শুরু করি">Get Started</a>
+                <a href="https://github.com/p02018671-byte" class="btn-secondary">GitHub</a>
             </div>
         </div>
     </header>
 
     <section id="stack">
         <div class="container">
-            <h2 class="section-title mobile-title">Modern Web Tech Stack</h2>
-            <div class="stack-grid mobile-grid">
-                <div class="stack-item glass"><span>Next.js</span></div>
-                <div class="stack-item glass"><span>Node.js</span></div>
-                <div class="stack-item glass"><span>Express.js</span></div>
-                <div class="stack-item glass"><span>Tailwind CSS</span></div>
-                <div class="stack-item glass"><span>TypeScript</span></div>
-                <div class="stack-item glass"><span>MongoDB</span></div>
+            <h2 class="section-title" data-en="Modern Tech Stack" data-bn="আধুনিক টেক স্ট্যাক">Modern Tech Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-item"><span>Next.js</span></div>
+                <div class="stack-item"><span>Node.js</span></div>
+                <div class="stack-item"><span>Express.js</span></div>
+                <div class="stack-item"><span>Tailwind CSS</span></div>
+                <div class="stack-item"><span>TypeScript</span></div>
+                <div class="stack-item"><span>MongoDB</span></div>
             </div>
         </div>
     </section>
 
-    <section id="philosophy" class="mobile-section">
+    <section id="philosophy">
         <div class="container">
-            <div class="philosophy-box glass mobile-box">
-                <h2>Why Trust & Logic are Essential?</h2>
-                <div class="p-grid mobile-p-grid">
+            <div class="philosophy-box glass">
+                <h2 data-en="Why Trust & Logic?" data-bn="বিশ্বাস ও লজিক কেন জরুরি?">Why Trust & Logic?</h2>
+                <div class="p-grid">
                     <div class="p-item">
-                        <h4>Building Identity (Trust)</h4>
-                        <p>একটি আধুনিক ওয়েবসাইট শুধু কোড নয়, এটি আপনার ব্যবসার প্রতি মানুষের বিশ্বাস তৈরি করে এবং ২৪/৭ খোলা থাকে।</p>
+                        <h4 data-en="Digital Credibility" data-bn="অনলাইন পরিচিতি (Trust)">Digital Credibility</h4>
+                        <p data-en="A modern website isn't just code; it's your brand's 24/7 digital identity that builds global trust." 
+                           data-bn="একটি আধুনিক ওয়েবসাইট শুধু কোড নয়, এটি আপনার ব্যবসার প্রতি মানুষের বিশ্বাস তৈরি করে এবং ২৪/৭ খোলা থাকে।">
+                           A modern website isn't just code; it's your brand's 24/7 digital identity that builds global trust.
+                        </p>
                     </div>
                     <div class="p-item">
-                        <h4>Backend Logic (Backend Power)</h4>
-                        <p>Node.js এবং লজিক ম্যানেজমেন্টের মাধ্যমে পর্দার আড়ালে ডেটা ও সিকিউরিটি নিশ্চিত করা।</p>
+                        <h4 data-en="Backend Power" data-bn="ব্যাকএন্ড লজিক (Logic)">Backend Power</h4>
+                        <p data-en="Managing complex data and security behind the scenes using Node.js logic and AI efficiency." 
+                           data-bn="Node.js এবং লজিক ম্যানেজমেন্টের মাধ্যমে পর্দার আড়ালে ডেটা ও সিকিউরিটি নিশ্চিত করা।">
+                           Managing complex data and security behind the scenes using Node.js logic and AI efficiency.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="mobile-contact">
+    <footer id="contact">
         <div class="container">
-            <div class="contact-wrapper glass mobile-contact-wrapper">
-                <h2>Ready to Start a Project?</h2>
-                <div class="contact-links mobile-links">
-                    <p>📧 p02018671@gmail.com</p>
-                    <p>📞 +880 161 839 7363</p>
-                    <p>📍 Dhaka, Bangladesh</p>
-                </div>
-                <div class="btn-group mobile-btns">
-                    <a href="#" class="btn-main">View GitHub</a>
-                </div>
-            </div>
+            <p data-en="© 2026 Jisan Ahmed. All Rights Reserved." data-bn="© ২০২৬ জিসান আহমেদ। সর্বস্বত্ব সংরক্ষিত।">
+                © 2026 Jisan Ahmed. All Rights Reserved.
+            </p>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Jisan Ahmed. Optimized for Mobile & AI Development.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
