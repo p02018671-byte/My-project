@@ -1,64 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jisan Ahmed - Portfolio</title>
+    <title>Jisan Ahmed | Portfolio - Optimized for Mobile</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="glow-blob"></div>
+    
     <nav class="navbar">
-        <div class="container">
-            <ul class="nav-menu">
+        <div class="container mobile-flex">
+            <div class="logo">JISAN<span>.</span></div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header id="home" class="hero">
+    <header id="home" class="hero mobile-padding">
         <div class="container">
-            <h1>Hello, I'm Jisan Ahmed</h1>
-            <p>Web Developer & PC Builder</p>
+            <div class="hero-text mobile-center">
+                <span class="tag mobile-badge">Next-Gen Tech Stock Ready</span>
+                <h1>Building <span class="gradient-text">Digital Trust</span> & Scalable Logic</h1>
+                <p>Developing 24/7 digital showrooms that drive business growth using Node.js backend logic and AI-powered tools like Windsurf.</p>
+                <div class="btn-group mobile-btns">
+                    <a href="#contact" class="btn-main">Get Started</a>
+                    <a href="#philosophy" class="btn-alt">My Vision</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="services">
+    <section id="stack">
         <div class="container">
-            <h2 class="section-title">My Services</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>PC Building</h3>
-                    <p>Custom-built PCs tailored to your specific needs.</p>
-                </div>
-                <div class="card">
-                    <h3>Hardware Consultation</h3>
-                    <p>Expert advice on selecting the right components.</p>
-                </div>
-                <div class="card">
-                    <h3>Web Development</h3>
-                    <p>Modern, responsive websites built with care.</p>
+            <h2 class="section-title mobile-title">Modern Web Tech Stack</h2>
+            <div class="stack-grid mobile-grid">
+                <div class="stack-item glass"><span>Next.js</span></div>
+                <div class="stack-item glass"><span>Node.js</span></div>
+                <div class="stack-item glass"><span>Express.js</span></div>
+                <div class="stack-item glass"><span>Tailwind CSS</span></div>
+                <div class="stack-item glass"><span>TypeScript</span></div>
+                <div class="stack-item glass"><span>MongoDB</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="mobile-section">
+        <div class="container">
+            <div class="philosophy-box glass mobile-box">
+                <h2>Why Trust & Logic are Essential?</h2>
+                <div class="p-grid mobile-p-grid">
+                    <div class="p-item">
+                        <h4>Building Identity (Trust)</h4>
+                        <p>একটি আধুনিক ওয়েবসাইট শুধু কোড নয়, এটি আপনার ব্যবসার প্রতি মানুষের বিশ্বাস তৈরি করে এবং ২৪/৭ খোলা থাকে।</p>
+                    </div>
+                    <div class="p-item">
+                        <h4>Backend Logic (Backend Power)</h4>
+                        <p>Node.js এবং লজিক ম্যানেজমেন্টের মাধ্যমে পর্দার আড়ালে ডেটা ও সিকিউরিটি নিশ্চিত করা।</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="mobile-contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-card">
-                <p>Email: p02018671@gmail.com</p>
-                <p>Phone: +880 161 839 7363</p>
-                <p>Location: Dhaka, Bangladesh</p>
+            <div class="contact-wrapper glass mobile-contact-wrapper">
+                <h2>Ready to Start a Project?</h2>
+                <div class="contact-links mobile-links">
+                    <p>📧 p02018671@gmail.com</p>
+                    <p>📞 +880 161 839 7363</p>
+                    <p>📍 Dhaka, Bangladesh</p>
+                </div>
+                <div class="btn-group mobile-btns">
+                    <a href="#" class="btn-main">View GitHub</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2026 Jisan Ahmed. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2026 Jisan Ahmed. Optimized for Mobile & AI Development.</p>
     </footer>
 </body>
 </html>
